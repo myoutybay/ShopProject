@@ -1,0 +1,23 @@
+.content-layout {
+  // make html parser match with screen reader
+  // background-color: #fff;
+  .content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    grid-area: content;
+    width: 100%;
+    p {
+      color: var(--vz-card-text) !important;
+    }
+    span {
+      color: var(--vz-body-color) !important;
+      height: auto !important;
+      width: 100% !important;
+    }
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.SideNav-Wrapper {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: -500px;
+  background-color: var(--vz-header-bg);
+  width: 80%;
+  height: 100%;
+  padding: 30px;
+  z-index: 99999;
+  transition: all 0.2s linear;
+  .SideNav-Holder {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+  }
+}
+.active {
+  visibility: visible;
+  opacity: 1;
+  right: 0;
+}

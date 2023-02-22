@@ -1,0 +1,111 @@
+footer.basic-footer {
+  padding: 30px 20rem 30px 20rem;
+  background-color: var(--vz-card-bg) !important;
+  hr {
+    margin: 20px 0 20px 0;
+  }
+}
+footer.footer-search {
+  padding: 30px 20px 30px 20rem;
+  background-color: var(--vz-card-bg) !important;
+  hr {
+    margin: 20px 0 20px 0;
+  }
+}
+.footer-social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  h2 {
+    font-size: 30px;
+  }
+  .social-media-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    img {
+      height: 35px;
+      width: 35px;
+      opacity: 0.75;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+    img:hover {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  align-items: center;
+  .footer-left {
+    .footer-logo {
+      width: 100%;
+    }
+  }
+  .footer-right {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-gap: 20px;
+    .footer-categories {
+      h2 {
+        font-size: 24px;
+        text-align: end;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        opacity: 0.75;
+        cursor: pointer;
+        text-align: end;
+        &:hover {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+      }
+    }
+    .footer-tags {
+      h2 {
+        font-size: 24px;
+        text-align: end;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        opacity: 0.75;
+        cursor: pointer;
+        text-align: end;
+        &:hover {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  footer.basic-footer {
+    padding: 50px 100px 50px 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  footer.basic-footer {
+    padding: 30px 20px 50px 20px;
+  }
+  .footer-container {
+    .footer-left {
+      .footer-logo {
+        width: 50%;
+        margin-bottom: 30px;
+      }
+    }
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

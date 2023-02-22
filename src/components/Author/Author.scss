@@ -1,0 +1,56 @@
+.author__item {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 4rem;
+}
+.author__link {
+  color: inherit;
+}
+.author__feature {
+  width: 30rem;
+  margin-top: 0px;
+  border-radius: 20px;
+}
+.rating-stars {
+  display: inline-flex;
+  flex-direction: row-reverse;
+}
+
+.author__image {
+  padding-top: 3.5rem;
+  width: 70%;
+  flex-shrink: 0;
+}
+.author__info {
+  padding-top: 3.5rem;
+  width: 30%;
+}
+.author__name {
+  font-size: 2.8rem;
+  top: 0;
+}
+.author__rating {
+  margin-bottom: 1rem;
+}
+.author__desc {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1440px) {
+  .author__image {
+    width: 100%;
+  }
+  .author__info {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 600px) {
+}

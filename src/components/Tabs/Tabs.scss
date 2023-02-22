@@ -1,0 +1,38 @@
+.tab {
+  width: 100%;
+  color: var(--vz-body-color);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.tabs-container {
+  width: 100%;
+  display: flex;
+  overflow: auto visible;
+}
+.tabs-container .inline {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.tabs-container .inline,
+.tab-controll {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-left: 0;
+  padding: 10px;
+  border-bottom: 2px solid #eee;
+  transition: all 0.5s;
+  font-weight: 300;
+  cursor: pointer;
+  color: var(--vz-body-color);
+}
+
+.tabs-container .inline,
+.tab-selected {
+  border-bottom: 2px solid #337ab7;
+  color: #337ab7;
+}

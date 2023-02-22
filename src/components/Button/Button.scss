@@ -1,0 +1,83 @@
+.button {
+  --sz: 100%;
+  width: var(--sz);
+  padding: 0 15px;
+  height: 55px;
+  color: white !important;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 20px;
+  display: flex;
+  background: var(--vz-vertical-menu-bg-gradient);
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  align-self: center;
+  box-sizing: border-box;
+  &:hover {
+    // transform smoothing
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.02);
+  }
+  // remove border
+  border: none;
+}
+.header-button-wrap {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: var(--vz-topbar-search-bg);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  .header-button-icon {
+    height: 50px;
+    width: 50px;
+  }
+}
+.nav-button-wrap {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: var(--vz-topbar-search-bg);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  .nav-button-icon {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.xs {
+  --sz: 100px;
+}
+.sm {
+  --sz: 150px;
+}
+.md {
+  --sz: 200px;
+}
+.lg {
+  --sz: 250px;
+}
+.btn-primary {
+  background: var(--vz-primary);
+}
+.btn-secondary {
+  background: var(--vz-secondary);
+}
+.btn-success {
+  background: var(--vz-success);
+}
+.btn-danger {
+  background: var(--vz-danger);
+}
+.btn-warning {
+  background: var(--vz-warning);
+}
+.btn-info {
+  background: var(--vz-info);
+}

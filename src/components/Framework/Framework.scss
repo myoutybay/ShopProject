@@ -1,0 +1,16 @@
+.swiper-framework {
+  height: auto;
+  max-height: 100px;
+  min-height: 100px;
+  border-radius: 10px !important;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .swiper-framework {
+    max-height: 100px;
+    min-height: 60px;
+  }
+}
